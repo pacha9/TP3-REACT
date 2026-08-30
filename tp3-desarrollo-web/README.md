@@ -1,16 +1,15 @@
-# React + Vite
+# Trabajo Práctico N.º 3 — Datos externos con useEffect
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Este proyecto fue desarrollado para la materia Desarrollo Web (2º Año - Tecnicatura en Análisis de Sistemas Informáticos). Consume datos de una API externa utilizando Axios y maneja de forma condicional los estados de carga, éxito y error.
 
-Currently, two official plugins are available:
+## Configuración de Variables de Entorno
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Por motivos de seguridad y buenas prácticas, las credenciales y URLs base no se encuentran harcodeadas en el código fuente. Para levantar el proyecto de forma local, debe crear un archivo `.env` en la raíz del directorio principal.
 
-## React Compiler
+Agregue la siguiente variable de entorno dentro del archivo `.env`:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```env
+VITE_API_URL=https://typicode.com
+```
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+*Nota: El archivo `.env` se encuentra correctamente configurado dentro de `.gitignore` para evitar que sea subido al repositorio público.*
